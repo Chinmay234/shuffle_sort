@@ -1,8 +1,11 @@
 # shuffle_sort
 shuffle_sort assignment maersk
 
-requirement to run the code - npm, node js.
+# system requirements
+npm, node js, chrome browser
 
-To run the code run the below command - npx http-server
+# Instructions
+Run the below command : 
+-> npx http-server
+
 open the localhost:8080 url in the chrome browser.
-
