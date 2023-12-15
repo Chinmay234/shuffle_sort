@@ -1,195 +1,94 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8" />
-
     <title>Shuffle and Sort</title>
-
     <base href="/" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <style>
-
       #app {
-
         display: flex;
-
       }
-
       #tile-grid {
-
         display: flex;
-
         flex-wrap: wrap;
-
         justify-content: space-around;
-
         height: 400px;
-
         width: 400px;
-
       }
-
- 
-
       .tile {
-
         flex: 1 0 32%;
-
         font-size: 30px;
-
         font-family: sans-serif;
-
         color: white;
-
         justify-content: center;
-
         align-items: center;
-
         display: flex;
-
       }
-
       .actions,
-
       .footnote {
-
         display: flex;
-
         justify-content: center;
-
         margin: 20px;
-
       }
-
- 
-
       .actions {
-
         display: flex;
-
         flex-direction: column;
-
         justify-content: flex-start;
-
         width: 20%;
-
         margin: 0;
-
         margin-left: 30px;
-
       }
-
- 
-
       button {
-
         cursor: pointer;
-
         padding: 10px;
-
         border: none;
-
         background-color: #72c3dc;
-
         border-bottom: 5px solid #2b8ead;
-
         border-radius: 10px;
-
         max-width: 100px;
-
         width: 100px;
-
         margin-bottom: 10px;
-
         margin-right: 10px;
-
       }
-
- 
-
       @media screen and (max-width: 500px) {
-
         #app {
-
           flex-direction: column-reverse;
-
         }
-
         #tile-grid {
-
           flex-direction: column;
-
           width: 100%;
-
         }
-
         .tile {
-
           font-size: 18px;
-
           color: black;
-
           margin-bottom: 5px;
-
           align-items: center;
-
           justify-content: center;
-
           display: flex;
-
           flex: 1 0 0%;
-
         }
-
         .tile.mobile {
-
           background-color: rgb(224, 224, 224) !important;
-
           border-left: 10px solid var(--originalColor, 'white');
-
         }
-
         .actions {
-
           margin: 0;
-
           flex-direction: row;
-
           width: 100%;
-
         }
-
       }
-
     </style>
-
   </head>
-
   <body>
-
     <script async type="text/javascript" src="./index.js"></script>
-
     <div id="app">
-
       <div id="tile-grid"></div>
-
       <div class="actions">
-
         <button id="shuffle">Shuffle</button>
-
         <button id="sort">Sort</button>
-
       </div>
-
     </div>
-
     <i class="footnote"> Shuffle and Sort by Chinmay</i>
-
   </body>
-
 </html>
